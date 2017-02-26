@@ -1,0 +1,10 @@
+package RF
+public
+	device RFEmitter
+		
+	end RFEmitter;
+	
+	device RFReceiver
+		
+	end RFReceiver;
+end RF;

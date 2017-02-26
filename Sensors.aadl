@@ -1,0 +1,14 @@
+package Sensors
+public
+	device SoundAlarm
+		
+	end SoundAlarm;
+	
+	device LightAlarm
+		
+	end LightAlarm;
+	
+	device ContactSensor
+		
+	end ContactSensor;
+end Sensors;
