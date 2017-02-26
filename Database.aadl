@@ -1,0 +1,13 @@
+package Database
+public
+	
+	--SRS 3.4.2.1 B
+	system DHDatabase
+	end DHDatabase;
+	
+	--SRS 3.4.2.1 C
+	system UserDatabase
+	end UserDatabase;
+	
+	
+end Database;

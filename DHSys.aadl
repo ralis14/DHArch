@@ -1,4 +1,11 @@
 package DHSys
 public
+	with WebServer;
 	
+	system DH
+		
+	end DH;
+	
+	system implementation DH.imp
+	end DH.imp;
 end DHSys;

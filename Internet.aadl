@@ -1,0 +1,6 @@
+package Internet
+public
+	device ISP
+		
+	end ISP;
+end Internet;

@@ -1,10 +1,12 @@
 package RF
 public
+	with SEI;
+	
+	--property is up to 1000-foot range transmission (Not in SEI Library)
 	device RFEmitter
-		
 	end RFEmitter;
 	
-	device RFReceiver
-		
+	device RFReceiver	
 	end RFReceiver;
+	
 end RF;

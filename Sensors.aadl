@@ -1,14 +1,49 @@
 package Sensors
 public
+	with SEI;
+	
+
+	--SRS 3.4.4.1 between 14F -> 104F (-10C - > 40C) (Sensor part has a sensitivity range of)
+	--SRS 3.4.4.1 digital programmable
+	--SRS 4.2.1.2 can be set between 60F -> 80F (Inclusive)
+	--SRS 4.2.2 up to 8 thermostats controlled individual or collective
+	--SRS 4.2.2.3 programmable up to 24 1 hour settings for everyday of the week
+	--SRS 4.2.2.4 manual override possible but after when next programmed hr new temperature it will be set
+	--SRS 4.2.3 Communicate wireless to DH Gateway(master control)
+	--SRS 4.2.4 Support F and C
+	--SRS 4.2.5 compatible with HVAC and adhere to [ASHRAE 2010]
+	device Termostat
+	end Termostat;
+	
+	--SRS 3.4.4.2 digital programmable 
+	--SRS 4.3.1.2 30% -> 60% inclusive at 1% increments
+	--SRS 4.3.2 support for up to 8 units
+	--SRS 4.3.2.3 programmable up to 24 1 hour settings for everyday of the week
+	--SRS 4.3.2.2 manual override possible but after when next programmed hr new humidity it will be set
+	device Humidistat
+	end Humidistat;
+	
+	--SRS 3.4.4.3 magnetic
+	--SRS 4.4.1.1 up to 50 units
+	--SRS 4.4.1.2 can activate 1 sound alarm and 1 light alarm subsystem (multiple lights)
+	device ContactSwitch
+	end ContactSwitch;
+	
+	--SRS 3.4.4.4
+	--activated when contact switch is on and triggered
 	device SoundAlarm
-		
 	end SoundAlarm;
 	
+	--SRS 3.4.4.4
+	--activated when contact switch is on and triggered
 	device LightAlarm
-		
 	end LightAlarm;
 	
-	device ContactSensor
-		
-	end ContactSensor;
+	--SRS 3.4.4.5 & 3.4.4.6
+	--Programmable
+	--each monitors state of an appliance, and controls it
+	device PowerSwitch
+	end PowerSwitch;
+	
+	
 end Sensors;

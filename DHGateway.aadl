@@ -1,0 +1,21 @@
+package DHGateway
+public
+	
+	--SRS 4.1.3 RF and Internet
+	with RF;
+	with Internet;
+	
+	system Gateway
+		
+	end Gateway;
+	
+	system implementation Gateway.imp
+		subcomponents
+			--SRS 3.4.3.2 
+			rfEm: device RF::RFEmitter;
+			rfRec: device RF::RFReceiver;
+			
+			isp: device Internet::ISP;
+	end Gateway.imp;
+	
+end DHGateway;

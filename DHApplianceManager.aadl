@@ -1,0 +1,9 @@
+package DHApplianceManager
+public
+	--SRS 4.5.1 control house lights
+	--SRS 4.5.2 can handle 100 ( up to 115 volt 10 amp power switches)
+	--SRS 4.5.3 Give status of ON or OFF
+	--SRS 4.5.4 Change the status ON/OFF
+	--SRS 4.5.5 Manual override until next set state (programmable??)
+	
+end DHApplianceManager;

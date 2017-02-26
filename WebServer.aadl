@@ -1,0 +1,31 @@
+package WebServer
+--SRS 4.1.1 Shall allow a Computer, Cell-Phone, or PDA to control:
+--	temperature, humidity, lights, security, and state of small appliances
+
+public
+	--SRS 3.4.2.1 (a -> d)sensors and database
+	with Database;
+	with Sensors;
+	
+	system WebServ
+	end WebServ;
+	
+	
+	system implementation WebServ.imp
+		subcomponents
+			
+			--SRS 4.1.1
+			thermperature: device Sensors::Termostat;
+			humidity: device Sensors::Humidistat;
+			alarmTrigger: device Sensors::ContactSwitch;
+			sound: device Sensors::SoundAlarm;
+			light: device Sensors::LightAlarm;
+			smallDevice: device Sensors::PowerSwitch;
+			
+			dhDB: system Database::DHDatabase;
+			userDB: system Database::UserDatabase;
+	end WebServ.imp;
+		
+	
+	
+end WebServer;
