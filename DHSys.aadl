@@ -51,6 +51,7 @@ public
 			userDB: system Database::UserDatabase;
 			
 			report: system PlannerAndReport::Report;
+			planner: system PlannerAndReport::Planner;
 	end WebServ.impl;
 	
 	----------------------------------------------------------------------------------------------------------------------------
@@ -66,8 +67,6 @@ public
 			rfReceiver: device RF::RFReceiver;
 			
 			isp: device Internet::ISP;
-			
-			planner: system PlannerAndReport::Planner;
 	end Gateway.imp;
 	
 	
