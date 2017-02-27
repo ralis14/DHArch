@@ -40,7 +40,7 @@ public
 		--SRS 4.1.1
 		--	temperature, humidity, lights, security, and state of small appliances
 		 subcomponents
-			themperature: device Sensors::Termostat;
+			temperature: device Sensors::Termostat;
 			humidity: device Sensors::Humidistat;
 			alarmTrigger: device Sensors::ContactSwitch;
 			sound: device Sensors::SoundAlarm;
@@ -62,8 +62,8 @@ public
 	system implementation Gateway.imp
 		subcomponents
 			--SRS 3.4.3.2 
-			rfEm: device RF::RFEmitter;
-			rfRec: device RF::RFReceiver;
+			rfEmitter: device RF::RFEmitter;
+			rfReceiver: device RF::RFReceiver;
 			
 			isp: device Internet::ISP;
 			
@@ -104,8 +104,8 @@ public
 	
 	system implementation UserInterface.imp
 		subcomponents
-			general: system GUI::GeneralGUI;
-			planner: system GUI::plannerGUI;
+			generalInterface: system GUI::GeneralGUI;
+			plannerInterface: system GUI::plannerGUI;
 	end UserInterface.imp;
 	
 end DHSys;
