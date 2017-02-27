@@ -2,7 +2,7 @@ package DHSys
 public
 	--SRS 3.4.2.1 (a -> d)sensors and database
 	with Database;
-	with Sensors;
+	with SensorDevices;
 	
 	--SRS 4.1.3 RF and Internet
 	with RF;
@@ -13,6 +13,9 @@ public
 	with Actor;
 	
 	with GUI;
+	
+	with ApplianceSwitch;
+	
 	
 	system DH
 		
@@ -25,8 +28,27 @@ public
 			this_dhGateway: system Gateway;
 			this_applianceManager: system ApplianceManager;
 			this_users: system Users;
+			this_sensors: system Sensors;
 			
 	end DH.with_devices;
+	
+	-------------------------------------------------------------------------------------------------------------------------------
+	--Sensors
+	system Sensors
+	end Sensors;
+	
+	system implementation Sensors.imp
+		--SRS 4.1.1
+		--	temperature, humidity, lights, security, and state of small appliances
+		subcomponents
+			temperature: device SensorDevices::Termostat;
+			humidity: device SensorDevices::Humidistat;
+			alarmTrigger: device SensorDevices::ContactSwitch;
+			sound: device SensorDevices::SoundAlarm;
+			light: device SensorDevices::LightAlarm;
+			smallDevice: device SensorDevices::PowerSwitch;
+			
+	end Sensors.imp;
 	
    --------------------------------------------------------------------------------------------------------------------------------
    --WebServ
@@ -37,16 +59,8 @@ public
 	
 	
 	system implementation WebServ.impl
-		--SRS 4.1.1
-		--	temperature, humidity, lights, security, and state of small appliances
-		 subcomponents
-			temperature: device Sensors::Termostat;
-			humidity: device Sensors::Humidistat;
-			alarmTrigger: device Sensors::ContactSwitch;
-			sound: device Sensors::SoundAlarm;
-			light: device Sensors::LightAlarm;
-			smallDevice: device Sensors::PowerSwitch;
-			
+
+		 subcomponents			
 			dhDB: system Database::DHDatabase;
 			userDB: system Database::UserDatabase;
 			
@@ -79,10 +93,12 @@ public
 	--SRS 4.5.4 Change the status ON/OFF
 	--SRS 4.5.5 Manual override until next set state (programmable??)
 	
-	system ApplianceManager
+	system ApplianceManager	
 	end ApplianceManager;
 	
 	system implementation ApplianceManager.imp
+		subcomponents
+			switch1: device ApplianceSwitch::SimpleSwitch;
 	end ApplianceManager.imp;
 	
 	----------------------------------------------------------------------------------------------------------------------------------

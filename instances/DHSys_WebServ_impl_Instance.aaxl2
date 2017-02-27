@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="ASCII"?>
 <instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="WebServ_impl_Instance" category="system">
-  <componentInstance name="temperature" category="device">
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDeviceSubcomponent.0"/>
-    <index>0</index>
-  </componentInstance>
-  <componentInstance name="humidity" category="device">
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDeviceSubcomponent.1"/>
-    <index>0</index>
-  </componentInstance>
-  <componentInstance name="alarmTrigger" category="device">
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDeviceSubcomponent.2"/>
-    <index>0</index>
-  </componentInstance>
-  <componentInstance name="sound" category="device">
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDeviceSubcomponent.3"/>
-    <index>0</index>
-  </componentInstance>
-  <componentInstance name="light" category="device">
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDeviceSubcomponent.4"/>
-    <index>0</index>
-  </componentInstance>
-  <componentInstance name="smallDevice" category="device">
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDeviceSubcomponent.5"/>
-    <index>0</index>
-  </componentInstance>
   <componentInstance name="dhDB" category="system">
-    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedSystemSubcomponent.0"/>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedSystemSubcomponent.0"/>
     <index>0</index>
   </componentInstance>
   <componentInstance name="userDB" category="system">
-    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedSystemSubcomponent.1"/>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedSystemSubcomponent.1"/>
     <index>0</index>
   </componentInstance>
   <componentInstance name="report" category="system">
-    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedSystemSubcomponent.2"/>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedSystemSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="planner" category="system">
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedSystemSubcomponent.3"/>
     <index>0</index>
   </componentInstance>
   <systemOperationMode name="No Modes"/>

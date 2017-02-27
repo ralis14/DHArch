@@ -20,6 +20,10 @@
     <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.4"/>
     <index>0</index>
   </componentInstance>
+  <componentInstance name="this_sensors" category="system">
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../DHSys.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.5"/>
+    <index>0</index>
+  </componentInstance>
   <systemOperationMode name="No Modes"/>
   <componentImplementation xsi:type="aadl2:SystemImplementation" href="../DHSys.aadl#DHSys.DH.with_devices"/>
 </instance:SystemInstance>

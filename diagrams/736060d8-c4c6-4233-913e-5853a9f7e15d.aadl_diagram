@@ -12,256 +12,11 @@
       <properties key="name" value="chopbox"/>
     </anchors>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.humidity"/>
-      <properties key="is_layed_out" value="true"/>
-      <properties key="is_lt_node" value="true"/>
-      <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="20" y="90" style="//@styles.0/@styles.1">
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150"/>
-          <points x="150" y="51"/>
-          <points x="146" y="47"/>
-          <points x="146" y="4"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150" y="51"/>
-          <points y="51"/>
-          <points x="4" y="47"/>
-          <points x="146" y="47"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="142" height="43" x="4" y="4" style="//@styles.0/@styles.1"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points/>
-          <points x="5" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="150"/>
-          <points x="145" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="145" y="46"/>
-          <points x="150" y="51"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points y="51"/>
-          <points x="5" y="46"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
-      <anchors xsi:type="pi:ChopboxAnchor">
-        <properties key="name" value="chopbox"/>
-      </anchors>
-      <children visible="true" active="true">
-        <properties key="name" value="label"/>
-        <properties key="is_manually_positioned" value="true"/>
-        <properties key="is_transient" value="true"/>
-        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.humidity"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="70" height="21" x="40" y="5" style="//@styles.2">
-          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="70" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="humidity"/>
-        </graphicsAlgorithm>
-      </children>
-    </children>
-    <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.alarmtrigger"/>
-      <properties key="is_layed_out" value="true"/>
-      <properties key="is_lt_node" value="true"/>
-      <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="20" y="160" style="//@styles.0/@styles.1">
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150"/>
-          <points x="150" y="51"/>
-          <points x="146" y="47"/>
-          <points x="146" y="4"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150" y="51"/>
-          <points y="51"/>
-          <points x="4" y="47"/>
-          <points x="146" y="47"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="142" height="43" x="4" y="4" style="//@styles.0/@styles.1"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points/>
-          <points x="5" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="150"/>
-          <points x="145" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="145" y="46"/>
-          <points x="150" y="51"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points y="51"/>
-          <points x="5" y="46"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
-      <anchors xsi:type="pi:ChopboxAnchor">
-        <properties key="name" value="chopbox"/>
-      </anchors>
-      <children visible="true" active="true">
-        <properties key="name" value="label"/>
-        <properties key="is_manually_positioned" value="true"/>
-        <properties key="is_transient" value="true"/>
-        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.alarmtrigger"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="98" height="21" x="26" y="5" style="//@styles.2">
-          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="98" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="alarmTrigger"/>
-        </graphicsAlgorithm>
-      </children>
-    </children>
-    <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.sound"/>
-      <properties key="is_layed_out" value="true"/>
-      <properties key="is_lt_node" value="true"/>
-      <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="190" y="20" style="//@styles.0/@styles.1">
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150"/>
-          <points x="150" y="51"/>
-          <points x="146" y="47"/>
-          <points x="146" y="4"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150" y="51"/>
-          <points y="51"/>
-          <points x="4" y="47"/>
-          <points x="146" y="47"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="142" height="43" x="4" y="4" style="//@styles.0/@styles.1"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points/>
-          <points x="5" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="150"/>
-          <points x="145" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="145" y="46"/>
-          <points x="150" y="51"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points y="51"/>
-          <points x="5" y="46"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
-      <anchors xsi:type="pi:ChopboxAnchor">
-        <properties key="name" value="chopbox"/>
-      </anchors>
-      <children visible="true" active="true">
-        <properties key="name" value="label"/>
-        <properties key="is_manually_positioned" value="true"/>
-        <properties key="is_transient" value="true"/>
-        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.sound"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="53" height="21" x="48" y="5" style="//@styles.2">
-          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="53" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="sound"/>
-        </graphicsAlgorithm>
-      </children>
-    </children>
-    <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.light"/>
-      <properties key="is_layed_out" value="true"/>
-      <properties key="is_lt_node" value="true"/>
-      <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="190" y="90" style="//@styles.0/@styles.1">
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150"/>
-          <points x="150" y="51"/>
-          <points x="146" y="47"/>
-          <points x="146" y="4"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150" y="51"/>
-          <points y="51"/>
-          <points x="4" y="47"/>
-          <points x="146" y="47"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="142" height="43" x="4" y="4" style="//@styles.0/@styles.1"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points/>
-          <points x="5" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="150"/>
-          <points x="145" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="145" y="46"/>
-          <points x="150" y="51"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points y="51"/>
-          <points x="5" y="46"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
-      <anchors xsi:type="pi:ChopboxAnchor">
-        <properties key="name" value="chopbox"/>
-      </anchors>
-      <children visible="true" active="true">
-        <properties key="name" value="label"/>
-        <properties key="is_manually_positioned" value="true"/>
-        <properties key="is_transient" value="true"/>
-        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.light"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="43" height="21" x="53" y="5" style="//@styles.2">
-          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="43" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="light"/>
-        </graphicsAlgorithm>
-      </children>
-    </children>
-    <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.smalldevice"/>
-      <properties key="is_layed_out" value="true"/>
-      <properties key="is_lt_node" value="true"/>
-      <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="190" y="160" style="//@styles.0/@styles.1">
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150"/>
-          <points x="150" y="51"/>
-          <points x="146" y="47"/>
-          <points x="146" y="4"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150" y="51"/>
-          <points y="51"/>
-          <points x="4" y="47"/>
-          <points x="146" y="47"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="142" height="43" x="4" y="4" style="//@styles.0/@styles.1"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points/>
-          <points x="5" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="150"/>
-          <points x="145" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="145" y="46"/>
-          <points x="150" y="51"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points y="51"/>
-          <points x="5" y="46"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
-      <anchors xsi:type="pi:ChopboxAnchor">
-        <properties key="name" value="chopbox"/>
-      </anchors>
-      <children visible="true" active="true">
-        <properties key="name" value="label"/>
-        <properties key="is_manually_positioned" value="true"/>
-        <properties key="is_transient" value="true"/>
-        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.smalldevice"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="92" height="21" x="29" y="5" style="//@styles.2">
-          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="92" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="smallDevice"/>
-        </graphicsAlgorithm>
-      </children>
-    </children>
-    <children xsi:type="pi:ContainerShape" visible="true" active="true">
       <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.dhdb"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="360" y="20" style="//@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
+      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="29" y="90" style="//@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
       <anchors xsi:type="pi:ChopboxAnchor">
         <properties key="name" value="chopbox"/>
       </anchors>
@@ -314,41 +69,11 @@
       </children>
     </children>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.temperature"/>
+      <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.planner"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
       <properties key="is_layed_out" value="true"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="25" y="25" style="//@styles.0/@styles.1">
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150"/>
-          <points x="150" y="51"/>
-          <points x="146" y="47"/>
-          <points x="146" y="4"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
-          <points x="150" y="51"/>
-          <points y="51"/>
-          <points x="4" y="47"/>
-          <points x="146" y="47"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="142" height="43" x="4" y="4" style="//@styles.0/@styles.1"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points/>
-          <points x="5" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="150"/>
-          <points x="145" y="5"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points x="145" y="46"/>
-          <points x="150" y="51"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.1">
-          <points y="51"/>
-          <points x="5" y="46"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
+      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" filled="false" width="150" height="51" x="29" y="160" style="//@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
       <anchors xsi:type="pi:ChopboxAnchor">
         <properties key="name" value="chopbox"/>
       </anchors>
@@ -356,9 +81,9 @@
         <properties key="name" value="label"/>
         <properties key="is_manually_positioned" value="true"/>
         <properties key="is_transient" value="true"/>
-        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.temperature"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="93" height="21" x="28" y="5" style="//@styles.2">
-          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="93" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="temperature"/>
+        <properties key="independentObject" value="org.osate.ge.diagrams.instance component_instance dhsys::webserv.impl webserv_impl_instance.planner"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="64" height="21" x="43" y="5" style="//@styles.2">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="64" height="21" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="planner"/>
         </graphicsAlgorithm>
       </children>
     </children>

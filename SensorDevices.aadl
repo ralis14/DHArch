@@ -1,4 +1,4 @@
-package Sensors
+package SensorDevices
 public
 	with SEI;
 	
@@ -46,4 +46,4 @@ public
 	end PowerSwitch;
 	
 	
-end Sensors;
+end SensorDevices;
