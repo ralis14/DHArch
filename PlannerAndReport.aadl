@@ -1,0 +1,16 @@
+package PlannerAndReport
+public
+	
+	--SRS 4.6.1 Planner will set preset home parameters (temperature, humidity, security contacts, on/off appliance/lights)
+	--SRS 4.6.2 Create or modify a month plan(for ea. day up to 4 time periods [temperature, humidity, contact sensors, power switches])
+	--SRS 4.6.2.2 Override through DHWebsite or Manual
+	system Planner
+	end Planner;
+	
+	--SRS 4.6.3 Month and Year for 2 years
+	--SRS 4.6.3.1 Maximums and Minimums (temperature and humidity) and daily average
+	--SRS 4.6.3.2 Day and Time for Security Breaches
+	--SRS 4.6.3.3 Periods of Time when DH-System not operational
+	system Report
+	end Report;
+end PlannerAndReport;

@@ -1,26 +1,11 @@
 package SoftwareSystems
 public
 	
-	system Report	
-	end Report;
-	
-	system Planner		
-	end Planner;
-	
-	system Users	
-	end Users;
-	
 	system GUIController
 	end GUIController;
 	
 	system GUIPlanner	
 	end GUIPlanner;
-	
-	
-	system WebPortal	
-	end WebPortal;
-	
-	system ApplicanceManager	
-	end ApplicanceManager;
+
 		
 end SoftwareSystems;

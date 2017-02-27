@@ -1,0 +1,9 @@
+package Actor
+public
+	system GeneralUser
+	end GeneralUser;
+	
+	system Technician
+	end Technician;
+	
+end Actor;

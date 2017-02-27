@@ -1,11 +1,111 @@
 package DHSys
 public
-	with WebServer;
+	--SRS 3.4.2.1 (a -> d)sensors and database
+	with Database;
+	with Sensors;
+	
+	--SRS 4.1.3 RF and Internet
+	with RF;
+	with Internet;
+	
+	with PlannerAndReport;
+	
+	with Actor;
+	
+	with GUI;
 	
 	system DH
 		
 	end DH;
 	
-	system implementation DH.imp
-	end DH.imp;
+	system implementation DH.with_devices
+		subcomponents
+			this_GUI: system UserInterface;
+			this_webServer: system WebServ;
+			this_dhGateway: system Gateway;
+			this_applianceManager: system ApplianceManager;
+			this_users: system Users;
+			
+	end DH.with_devices;
+	
+   --------------------------------------------------------------------------------------------------------------------------------
+   --WebServ
+
+	
+	system WebServ
+	end WebServ;
+	
+	
+	system implementation WebServ.impl
+		--SRS 4.1.1
+		--	temperature, humidity, lights, security, and state of small appliances
+		 subcomponents
+			themperature: device Sensors::Termostat;
+			humidity: device Sensors::Humidistat;
+			alarmTrigger: device Sensors::ContactSwitch;
+			sound: device Sensors::SoundAlarm;
+			light: device Sensors::LightAlarm;
+			smallDevice: device Sensors::PowerSwitch;
+			
+			dhDB: system Database::DHDatabase;
+			userDB: system Database::UserDatabase;
+			
+			report: system PlannerAndReport::Report;
+	end WebServ.impl;
+	
+	----------------------------------------------------------------------------------------------------------------------------
+	-- Gateway
+	system Gateway
+		
+	end Gateway;
+	
+	system implementation Gateway.imp
+		subcomponents
+			--SRS 3.4.3.2 
+			rfEm: device RF::RFEmitter;
+			rfRec: device RF::RFReceiver;
+			
+			isp: device Internet::ISP;
+			
+			planner: system PlannerAndReport::Planner;
+	end Gateway.imp;
+	
+	
+	-------------------------------------------------------------------------------------------------------------------------------
+	-- ApplianceManager
+	
+	--SRS 4.5.1 control house lights
+	--SRS 4.5.2 can handle 100 ( up to 115 volt 10 amp power switches)
+	--SRS 4.5.3 Give status of ON or OFF
+	--SRS 4.5.4 Change the status ON/OFF
+	--SRS 4.5.5 Manual override until next set state (programmable??)
+	
+	system ApplianceManager
+	end ApplianceManager;
+	
+	system implementation ApplianceManager.imp
+	end ApplianceManager.imp;
+	
+	----------------------------------------------------------------------------------------------------------------------------------
+	-- Users
+	system Users
+	end Users;
+	
+	System implementation Users.imp
+		subcomponents
+			general: system Actor::GeneralUser;
+			admin: system Actor::Technician;
+	end Users.imp;
+	
+	----------------------------------------------------------------------------------------------------------------------------------
+	-- GUI
+	system UserInterface
+	end UserInterface;
+	
+	system implementation UserInterface.imp
+		subcomponents
+			general: system GUI::GeneralGUI;
+			planner: system GUI::plannerGUI;
+	end UserInterface.imp;
+	
 end DHSys;
