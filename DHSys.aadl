@@ -29,12 +29,21 @@ public
 			this_applianceManager: system ApplianceManager;
 			this_users: system Users;
 			this_sensors: system Sensors;
-			
+		connections
+			connection1: port this_webServer.webService -> this_GUI.webInterface;
+			connection2: port this_users.uDevice -> this_webServer.phoneLaptopPDA;
+			connection3: port this_users.uPhysical -> this_dhGateway.gateWayInterface;
+			connection4: port this_dhGateway.webServer -> this_webServer.API;
+			connection5: port this_dhGateway.appliancePort -> this_applianceManager.interface;
+			connection6: port this_dhGateway.rfOutPort -> this_sensors.controller;
+			connection7: port this_dhGateway.guiPort -> this_GUI.dhInterface;
 	end DH.with_devices;
 	
 	-------------------------------------------------------------------------------------------------------------------------------
 	--Sensors
 	system Sensors
+		features
+			controller: in data port;
 	end Sensors;
 	
 	system implementation Sensors.imp
@@ -55,6 +64,10 @@ public
 
 	
 	system WebServ
+		features
+			phoneLaptopPDA: in data port;
+			API: in data port;
+			webService: out data port;
 	end WebServ;
 	
 	
@@ -71,7 +84,12 @@ public
 	----------------------------------------------------------------------------------------------------------------------------
 	-- Gateway
 	system Gateway
-		
+		features
+			gateWayInterface: in data port;
+			webServer: out data port;
+			guiPort: out data port;
+			rfOutPort: out data port;
+			appliancePort: out data port;
 	end Gateway;
 	
 	system implementation Gateway.imp
@@ -94,6 +112,8 @@ public
 	--SRS 4.5.5 Manual override until next set state (programmable??)
 	
 	system ApplianceManager	
+		features
+			interface: in data port;
 	end ApplianceManager;
 	
 	system implementation ApplianceManager.imp
@@ -104,6 +124,9 @@ public
 	----------------------------------------------------------------------------------------------------------------------------------
 	-- Users
 	system Users
+		features
+			uDevice: out data port;
+			uPhysical: out data port;
 	end Users;
 	
 	System implementation Users.imp
@@ -115,6 +138,9 @@ public
 	----------------------------------------------------------------------------------------------------------------------------------
 	-- GUI
 	system UserInterface
+		features
+			webInterface: in data port;
+			dhInterface: in data port;
 	end UserInterface;
 	
 	system implementation UserInterface.imp
